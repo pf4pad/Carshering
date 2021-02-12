@@ -395,8 +395,11 @@ body
 .footer__social-link
   margin: 0 15px
 @media (max-width: 860px)
+
   .menu
     order: 1
+  .phone
+    display: none
   .menu__list
     display: block
     position: absolute
@@ -407,6 +410,10 @@ body
     text-align: center
     padding: 20px 0
     transform: translateY(-600px)
+    transition: all 1.5s
+  .menu__list.menu__list--active
+    transition: all 1.5s
+    transform: translateY(0)
   .menu__list-link
     padding: 20px 0
     display: block

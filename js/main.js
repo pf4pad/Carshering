@@ -6,8 +6,8 @@ $('.top__slider').slick({
   fade:true
 
 });
-});
-$(function(){
+
+
 $('.reviews__slider').slick({
   arrows:  false,
   dots: true,
@@ -15,4 +15,10 @@ $('.reviews__slider').slick({
   slidesToShow: 4,
   slidesToScroll: 1
 });
+
+$('.menu__btn').on('click', function(){
+  $('.menu__list').toggleClass('menu__list--active');
+
+});
+
 });
