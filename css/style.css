@@ -544,6 +544,10 @@ body {
     padding-top: 50px;
     text-align: center;
   }
+  .top__link {
+    font-size: 18px;
+    color: #C5AC2D;
+  }
   .top__items {
     width: 100%;
   }
