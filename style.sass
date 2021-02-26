@@ -81,14 +81,14 @@ body
   color: #fefefe
   background: #C5AC2D
   padding: 16px 19px 15px
-  transition: all 1.5s
+  transition: all 0.5s
   border: 1px solid transparent
 
 .application-btn:hover
   color: #C5AC2D
   background: #fefefe
   border: 1px solid #C5AC2D
-  transition: all 1.5s
+  transition: all 0.5s
 
 .top__slider
   width: 50%
@@ -266,6 +266,7 @@ body
   text-align: center
   display: inline-block
   position: relative
+
 .video-popup::before
   content: ''
   position: absolute
@@ -274,8 +275,9 @@ body
   background-image: url('../images/PLAY.svg')
   top: 12px
   left: 34px
-  z-index: 5
-
+  transition: all 0.5
+.video-popup:hover::before
+  background-image: url('../images/PLAY-black.svg')
 .reviews
   background: #332208
   padding: 100px 0
@@ -436,6 +438,11 @@ body
     justify-content: space-around
   .benefits__text + .benefits__text
     width: 100%
+  .benefits__text
+    text-align: left
+.video-popup
+  right: 50%
+  transform: translateX(50%)
   .footer .menu
     display: none
 @media (max-width: 860px)
