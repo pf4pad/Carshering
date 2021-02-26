@@ -271,9 +271,10 @@ body
   position: absolute
   width: 25px
   height: 25px
-  background-image: url(../images/PLAY.svg) no-repeat
+  background-image: url('../images/PLAY.svg')
   top: 12px
   left: 34px
+  z-index: 5
 
 .reviews
   background: #332208
@@ -425,6 +426,8 @@ body
     text-align: center
   .top__items
     width: 100%
+  .top__item:hover
+    transform: scale(1)
   .benefits__content
     width: 100%
     margin-top: 30px
